@@ -1,6 +1,20 @@
 * {
-  font-family: sans-serif;
+  font-family: varela;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: varela;
+  src: url(./assets/fonts/Varela/Varela-Regular.ttf);
+}
+
+@font-face {
+  font-family: great-vibes;
+  src: url(./assets/fonts/Great_Vibes/GreatVibes-Regular.ttf);
+}
+
+a {
+  text-decoration: none;
 }

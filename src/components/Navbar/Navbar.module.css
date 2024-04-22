@@ -1,0 +1,41 @@
+.navbar_container {
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	background-color: #18453b;
+}
+
+.logo_container {
+	flex-basis: 15%;
+}
+
+.logo_container span {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	height: 80%;
+}
+
+.links_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-basis: 70%;
+	font-size: 18px;
+}
+
+.links_container a {
+	color: white;
+	border-bottom: solid 2px #18453b;
+	padding: 0.2rem 0;
+}
+
+.links_container a:hover {
+	border-bottom: solid 2px white;
+}
