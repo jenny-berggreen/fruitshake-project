@@ -7,7 +7,7 @@ const FruitsProvider = ({children}) => {
 
 	const fetchFruits = async() => {
 		try {
-			const response = await fetch('http://localhost:4000/');
+			const response = await fetch('http://localhost:5000/');
 			const data = await response.json();
 			setFruitsList(data.sort((a,b) => a.name.localeCompare(b.name))); // or: setFruitsList(data.sort((a,b) => a.name - b.name))
 		} catch (error) {
@@ -15,13 +15,15 @@ const FruitsProvider = ({children}) => {
 		}
 	}
 
+	console.log(fruitsList);
+
 	useEffect(() => {
 		fetchFruits();
 	}, []);
 
   return (
 	<div>
-		<fruitsContext.Provider value={fruitsList}>
+		<fruitsContext.Provider value={{fruitsList, setFruitsList}}>
 			{children}
 		</fruitsContext.Provider>
 	</div>
