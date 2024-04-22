@@ -1,0 +1,13 @@
+.shakesList_main_container {
+	height: auto;
+
+}
+
+.shakesList_list_container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
